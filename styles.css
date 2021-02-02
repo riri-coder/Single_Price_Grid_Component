@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10%;
+  font-family: 'Karla', sans-serif;
+  border-radius: 30%;
+}
+
+.grid1 {
+  background-color: #fff;
+  padding: 5% 8%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.grid1 h2 {
+  color: hsl(179, 62%, 43%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grid1 .firstp {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.grid1 .secondp {
+  line-height: 1.8;
+  font-size: 14px;
+  color: hsla(218, 22%, 67%, .8);
+  font-weight: 400;
+}
+
+.grid2 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 5% 8%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.grid2 h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grid2 .firstp .dollar {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.grid2 .firstp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.grid2 .permth {
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.grid2 .secondp {
+  margin-top: 5px;
+  margin-bottom: 10%;
+}
+
+button {
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 2%;
+  padding: .8rem 5rem;
+  box-shadow: 1px 2px 2px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3%;
+}
+
+.grid3 {
+  background-color: hsla(179, 62%, 43%, 80%);
+  padding: 5% 8%;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  line-height: 1.2;
+}
+
+.grid3 ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.grid3 ul li {
+  color: rgba(255, 255, 255, 0.6);
+  list-style-type: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 900px){
+  body{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: 10% 20%;
+    justify-content: center;
+
+  }
+
+  .grid1{
+    grid-column: 1/3;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    font-size: 1rem;
+  }
+
+  .grid1 h2{
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .grid1 .firstp{
+      font-size: 1.5em;
+  }
+  .grid1 .secondp{
+      font-size: 1em;
+  }
+
+  .grid2{
+    border-bottom-left-radius: 2%;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+  width: auto;
+  }
+
+  .grid3{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 2%;
+
+  }
+.grid3 ul li{
+  font-size: 14px;
+}
+  footer{
+    grid-column: 1/3;
+  }
+}
